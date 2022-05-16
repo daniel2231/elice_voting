@@ -2,8 +2,10 @@
 
 <p align="center">
   <br>
-  <img src="/images/background.png" style="border-radius: 25px;">
+  <kbd>
+  <img src="/images/background.png">
   <br>
+  </kdb>
 </p>
 
 목차
