@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img src="/images/background.png">
+  <img src="/images/background.png" style="border-radius: 25px;">
   <br>
 </p>
 
