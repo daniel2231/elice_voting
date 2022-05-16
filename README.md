@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img src="./public/background.png">
+  <img src="/images/background.png">
   <br>
 </p>
 
@@ -51,4 +51,4 @@ GIF Images
 <!-- Stack Icon Refernces -->
 
 [js]: /images/stacks/javascript.svg
-[node]: /images/stack/node.svg
+[node]: /images/stacks/node.svg
