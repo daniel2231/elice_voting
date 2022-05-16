@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 const { MONGO_URI, PORT } = process.env;
 
+
 mongoose
   .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("Connected to MongoDB"))
@@ -14,12 +15,15 @@ const app = express();
 
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views/pages");
+app.use(express.static("public"));
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }));
 
 // 라우터 설정
+const indexRouter = require("./router/indexRouter");
 
-app.get("/", (req, res) => {
-  res.render("index");
-});
+// indexRouter에서 라우팅 설정
+app.use("/", indexRouter);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
