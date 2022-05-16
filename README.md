@@ -23,8 +23,8 @@ GIF Images
 ## 기술 스택
 
 | JavaScript |  Node   |
-| :--------: | :--------: |
-|   ![js]    |   ![node] |
+| :--------: | :-----: |
+|   ![js]    | ![node] |
 
 <br>
 
@@ -50,7 +50,5 @@ GIF Images
 
 <!-- Stack Icon Refernces -->
 
-[js]: /images/stack/javascript.svg
-[ts]: /images/stack/typescript.svg
-[react]: /images/stack/react.svg
+[js]: /images/stacks/javascript.svg
 [node]: /images/stack/node.svg
