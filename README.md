@@ -2,10 +2,8 @@
 
 <p align="center">
   <br>
-  <kbd>
   <img src="/images/background.png">
   <br>
-  </kdb>
 </p>
 
 목차
