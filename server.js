@@ -25,6 +25,7 @@ const indexRouter = require("./router/indexRouter");
 // indexRouter에서 라우팅 설정
 app.use("/", indexRouter);
 
+// Port 설정
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
