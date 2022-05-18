@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>서비스 소개</h1>
+    <a href="add">서비스 추가</a>
+
+    <% for(let i=0;i<services.length;i++) { %> 
+        <form action="/services/list/<%=services[i].id%>/vote" method="post">
+            <p>
+                서비스명: <%=services[i].name %><br>
+                서비스 링크: <a href="<%=services[i].link %>" target="_blank"><%=services[i].link %></a><br>
+                득표 수:<%=services[i].votes %><br>
+                랭크: <%=services[i].rank %><br>
+            </p>
+            <input type="submit" value="투표">
+            <br><br>
+        </form>
+    <% } %>
+        
+</body>
+</html>
