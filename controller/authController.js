@@ -1,6 +1,6 @@
 const passport = require("passport");
 const session = require("express-session");
-const GithubStrategy = require("passport-github").Strategy;
+const GithubStrategy = require("passport-github2").Strategy;
 // const User = require("../models/User");
 
 passport.use(
