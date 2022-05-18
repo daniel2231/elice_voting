@@ -6,25 +6,20 @@
   <br>
 </p>
 
-목차
-
 ## 프로젝트 소개
 
 <p align="justify">
-프로젝트 개요/동기
+엘리스 코딩 2반 대회를 위한 투표 서비스입니다.
 </p>
 
-<p align="center">
-GIF Images
-</p>
 
 <br>
 
 ## 기술 스택
 
-| JavaScript |  Node   |
-| :--------: | :-----: |
-|   ![js]    | ![node] |
+| JavaScript |  Node   | Express | MongoDB |
+| :--------: | :-----: |:-----: | :-----: |
+|   ![js]    | ![node] | ![express] | ![mongodb] |
 
 <br>
 
@@ -52,3 +47,5 @@ GIF Images
 
 [js]: /images/stacks/javascript.svg
 [node]: /images/stacks/node.svg
+[express]: /images/stacks/express.svg
+[mongodb]: /images/stacks/mongodb.svg
