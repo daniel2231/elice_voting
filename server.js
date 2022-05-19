@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 const { MONGO_URI, PORT } = process.env;
 const session = require("express-session");
+const passport = require("passport");
 
 mongoose
   .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -31,15 +32,10 @@ app.use(
   })
 );
 
-// strategy 처리
-require('./config/passport');
 // 초기화. user정보가 req.user로 들어가게 됨
 app.use(passport.initialize());
 // passport 내에서 session을 사용해 로그인을 지속시킴
 app.use(passport.session());
-
-// 미들웨어 등록
-const authController = require("../controllers/authController");
 
 // 라우터 설정
 const indexRouter = require("./router/indexRouter");
