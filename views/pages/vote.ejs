@@ -1,0 +1,65 @@
+<html lang="en" class="h-100">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body>
+    <div class="mx-6 h-100 d-flex flex-column align-items-center justify-content-center">
+      <div class="container d-flex justify-content-between">
+        <h1>우당탕탕 개발대회</h1>
+        <div class="d-flex align-items-center">
+          <input type="button" value="새로고침" onclick="reload()" />
+          <input type="button" value="로그아웃" onabort="logout()" />
+        </div>
+      </div>
+      <div class="container d-grid">
+        <div class="row">
+          <div id="1" class="col-xl-4 col-md-6">
+            <p>Service Name</p>
+            <p>Producer</p>
+            <a href="" class="d-block">Github OR ghpages</a>
+            <input type="button" value="투표" class="w-100" onclick="vote()" />
+          </div>
+          <div id="2" class="col-xl-4 col-md-6">
+            <p>Service Name</p>
+            <p>Producer</p>
+            <a href="" class="d-block">Github OR ghpages</a>
+            <input type="button" value="투표" class="w-100" onclick="vote()" />
+          </div>
+          <div id="3" class="col-xl-4 col-md-6">
+            <p>Service Name</p>
+            <p>Producer</p>
+            <a href="" class="d-block">Github OR ghpages</a>
+            <input type="button" value="투표" class="w-100" onclick="vote()" />
+          </div>
+          <!-- </div>
+        <div class="row"> -->
+          <div id="4" class="col-xl-4 col-md-6">
+            <p>Service Name</p>
+            <p>Producer</p>
+            <a href="" class="d-block">Github OR ghpages</a>
+            <input type="button" value="투표" class="w-100" onclick="vote()" />
+          </div>
+          <div id="5" class="col-xl-4 col-md-6">
+            <p>Service Name</p>
+            <p>Producer</p>
+            <a href="" class="d-block">Github OR ghpages</a>
+            <input type="button" value="투표" class="w-100" onclick="vote()" />
+          </div>
+          <div id="6" class="col-xl-4 col-md-6">
+            <p>Service Name</p>
+            <p>Producer</p>
+            <a href="" class="d-block">Github OR ghpages</a>
+            <input type="button" value="투표" class="w-100" onclick="vote()" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function reload() {
+        location.reload();
+      }
+      function logout() {}
+      function vote() {}
+    </script>
+  </body>
+</html>
