@@ -9,7 +9,8 @@
 <body>
     <h1>서비스 소개</h1>
     <a href="add">서비스 추가</a>
- 
+    <button id = "reload">새로고침</button>  <!--현재 미사용. 투표버튼으로 새로고침되고 있음-->
+
     <% for(let i=0;i<services.length;i++) { %> 
         <form action="/services/list/<%=services[i].id%>/vote" method="post">
             <p>

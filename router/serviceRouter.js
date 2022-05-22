@@ -9,6 +9,7 @@ router.get('/list', async (req, res)=>{
     res.render('services/service', {services});
 })
 
+
 router.post('/list/:id/vote', async (req, res)=>{
     const { id } = req.params;
     const services = await Service.find({}).exec();
@@ -18,9 +19,13 @@ router.post('/list/:id/vote', async (req, res)=>{
             votes: Number(service.votes) + 1
         }
     });
-    res.redirect('/services/list');
+    // res.redirect('/services/list');
+    res.redirect('/services/test');  //테스트용 화면으로 임시 redirect
 
 })
+
+const getRank = require('../controller/getRank');
+router.get('/test', getRank.rank);
 
 router.get('/add', (req, res)=>{
     res.render('services/add');
