@@ -1,4 +1,4 @@
-<html lang="en" class="h-100">
+<html lang="en">
   <head>
     <%- include('../partials/head'); %>
     <style>
@@ -22,18 +22,19 @@
         opacity: 1;
       }
 
-      .gold-medal {
+      .medal {
         width: 6.25rem;
+      }
+
+      .gold {
         background: url('images/gold-medal.png') no-repeat center/contain;
       }
 
-      .silver-medal {
-        width: 6.25rem;
+      .silver {
         background: url('images/silver-medal.png') no-repeat center/contain;
       }
 
-      .bronze-medal {
-        width: 6.25rem;
+      .bronze {
         background: url('images/bronze-medal.png') no-repeat center/contain;
       }
 
@@ -42,9 +43,9 @@
       }
     </style>
   </head>
-  <body>
-    <div class="mx-6 h-100 d-flex flex-column align-items-center justify-content-center">
-      <div class="container d-flex justify-content-between mb-5">
+  <body class="d-flex align-items-center justify-content-center">
+    <div class="mx-6 d-flex flex-column align-items-center justify-content-center">
+      <div class="container d-flex justify-content-between mt-5 mb-5">
         <div class="d-flex">
           <span class="d-inline-block mb-3 fs-1 highlight">우</span>
           <span class="d-inline-block mt-3 fs-1">당</span>
@@ -66,7 +67,7 @@
                   <p>Service Name</p>
                   <p>Producer</p>
                 </div>
-                <div class="d-inline-block gold-medal"></div>
+                <div class="d-inline-block medal gold"></div>
               </div>
               <a href="" class="d-block mb-3">Github OR ghpages</a>
               <input type="button" value="투표" class="w-100 py-2" onclick="vote()" />
@@ -79,7 +80,7 @@
                   <p>Service Name</p>
                   <p>Producer</p>
                 </div>
-                <div class="d-inline-block silver-medal"></div>
+                <div class="d-inline-block medal silver"></div>
               </div>
               <a href="" class="d-block mb-3">Github OR ghpages</a>
               <input type="button" value="투표" class="w-100 py-2" onclick="vote()" />
@@ -92,7 +93,7 @@
                   <p>Service Name</p>
                   <p>Producer</p>
                 </div>
-                <div class="d-inline-block bronze-medal"></div>
+                <div class="d-inline-block medal bronze"></div>
               </div>
               <a href="" class="d-block mb-3">Github OR ghpages</a>
               <input type="button" value="투표" class="w-100 py-2" onclick="vote()" />
