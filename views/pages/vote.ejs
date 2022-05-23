@@ -1,0 +1,136 @@
+<html lang="en" class="h-100">
+  <head>
+    <%- include('../partials/head'); %>
+    <style>
+      body {
+        background-color: #f5f5f5;
+      }
+
+      .highlight {
+        color: #5426cc;
+      }
+
+      input[type='button'] {
+        background-color: #5426cc;
+        border: none;
+        color: white;
+        opacity: 0.7;
+        transition: opacity 0.35s;
+      }
+
+      input[type='button']:hover {
+        opacity: 1;
+      }
+
+      .gold-medal {
+        width: 6.25rem;
+        background: url('images/gold-medal.png') no-repeat center/contain;
+      }
+
+      .silver-medal {
+        width: 6.25rem;
+        background: url('images/silver-medal.png') no-repeat center/contain;
+      }
+
+      .bronze-medal {
+        width: 6.25rem;
+        background: url('images/bronze-medal.png') no-repeat center/contain;
+      }
+
+      .in {
+        animation: in 0.4s ease-in 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mx-6 h-100 d-flex flex-column align-items-center justify-content-center">
+      <div class="container d-flex justify-content-between mb-5">
+        <div class="d-flex">
+          <span class="d-inline-block mb-3 fs-1 highlight">우</span>
+          <span class="d-inline-block mt-3 fs-1">당</span>
+          <span class="d-inline-block mb-3 fs-1 highlight">탕</span>
+          <span class="d-inline-block mt-3 fs-1">탕</span>
+          <span class="d-inline-block ps-3 fs-1 highlight">개발대회</span>
+        </div>
+        <div class="d-flex align-items-center">
+          <input type="button" value="새로고침" class="px-3 py-2 shadow me-2" onclick="reload()" />
+          <input type="button" value="로그아웃" class="px-3 py-2 shadow" onclick="logout()" />
+        </div>
+      </div>
+      <div class="container d-grid">
+        <div class="row">
+          <div id="1" class="col-xl-4 col-md-6 mb-5">
+            <div class="p-3 shadow">
+              <div class="d-flex justify-content-between">
+                <div class="d-inline-block">
+                  <p>Service Name</p>
+                  <p>Producer</p>
+                </div>
+                <div class="d-inline-block gold-medal"></div>
+              </div>
+              <a href="" class="d-block mb-3">Github OR ghpages</a>
+              <input type="button" value="투표" class="w-100 py-2" onclick="vote()" />
+            </div>
+          </div>
+          <div id="2" class="col-xl-4 col-md-6 mb-5">
+            <div class="p-3 shadow">
+              <div class="d-flex justify-content-between">
+                <div class="d-inline-block">
+                  <p>Service Name</p>
+                  <p>Producer</p>
+                </div>
+                <div class="d-inline-block silver-medal"></div>
+              </div>
+              <a href="" class="d-block mb-3">Github OR ghpages</a>
+              <input type="button" value="투표" class="w-100 py-2" onclick="vote()" />
+            </div>
+          </div>
+          <div id="3" class="col-xl-4 col-md-6 mb-5">
+            <div class="p-3 shadow">
+              <div class="d-flex justify-content-between">
+                <div class="d-inline-block">
+                  <p>Service Name</p>
+                  <p>Producer</p>
+                </div>
+                <div class="d-inline-block bronze-medal"></div>
+              </div>
+              <a href="" class="d-block mb-3">Github OR ghpages</a>
+              <input type="button" value="투표" class="w-100 py-2" onclick="vote()" />
+            </div>
+          </div>
+          <div id="4" class="col-xl-4 col-md-6 mb-5">
+            <div class="p-3 shadow">
+              <p>Service Name</p>
+              <p>Producer</p>
+              <a href="" class="d-block mb-3">Github OR ghpages</a>
+              <input type="button" value="투표" class="w-100 py-2" onclick="vote()" />
+            </div>
+          </div>
+          <div id="5" class="col-xl-4 col-md-6 mb-5">
+            <div class="p-3 shadow">
+              <p>Service Name</p>
+              <p>Producer</p>
+              <a href="" class="d-block mb-3">Github OR ghpages</a>
+              <input type="button" value="투표" class="w-100 py-2" onclick="vote()" />
+            </div>
+          </div>
+          <div id="6" class="col-xl-4 col-md-6 col-sm-12 mb-5">
+            <div class="p-3 shadow">
+              <p>Service Name</p>
+              <p>Producer</p>
+              <a href="" class="d-block mb-3">Github OR ghpages</a>
+              <input type="button" value="투표" class="w-100 py-2" onclick="vote()" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function reload() {
+        location.reload();
+      }
+      function logout() {}
+      function vote() {}
+    </script>
+  </body>
+</html>
