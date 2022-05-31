@@ -21,9 +21,14 @@ app.use(express.urlencoded({ extended: true }));
 
 // 라우터 설정
 const indexRouter = require("./router/indexRouter");
+const userRouter = require('./router/userRouter');
+const serviceRouter = require('./router/serviceRouter');
 
 // indexRouter에서 라우팅 설정
 app.use("/", indexRouter);
+app.use("/users", userRouter);
+app.use("/services", serviceRouter);
+
 
 // Port 설정
 app.listen(PORT, () => {
