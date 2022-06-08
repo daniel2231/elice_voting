@@ -25,7 +25,7 @@ router.get("/new-user", async (req, res)=>{
 router.post('/new-user/submit', body('email').isEmail().withMessage('not email'), body('password').isLength({ min:5 }).withMessage('longer than 5'), async (req, res)=>{
     const errors = validationResult(req);
     if (!errors.isEmpty()){
-        return response.status(400).json({
+        return res.status(400).json({
             errors: errors.array()
       })
     }
@@ -46,7 +46,7 @@ router.post('/new-user/submit', body('email').isEmail().withMessage('not email')
         password: bcryptpw
     })
     .then(result => {
-        res.status(200).render('services/service');
+        res.status(200).render('/pages/services/service');
     })
 });
 
