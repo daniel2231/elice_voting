@@ -72,9 +72,9 @@
                     <p><%= services[i].name %></p>
                     <p><%= services[i].producer %></p>
                   </div>
-                  <div class="d-inline-block medal" id="<%= services[i].rank %>"></div>
+                  <button type="button" class="btn btn-dark w-100 py-2" onclick="location.href='<%= services[i].link %>'">링크</button>
                 </div>
-                <a href="" class="d-block mb-3"><%= services[i].link %></a>
+                
                 <input type="button" value="투표" class="w-100 py-2" onclick="vote(<%= services[i].id %>)" />
               </div>
             </div>
@@ -127,6 +127,7 @@
                 element.disabled = true;
                 element.style.opacity = 0.5;
               });
+              window.location.reload();
           }
         })
       }
