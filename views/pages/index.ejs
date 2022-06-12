@@ -69,13 +69,16 @@
               <div class="p-3 shadow">
                 <div class="d-flex justify-content-between">
                   <div class="d-inline-block">
-                    <p><%= services[i].name %></p>
-                    <p><%= services[i].producer %></p>
+                    <p class="fw-bold"><%= services[i].name %></p>
+                    <p class="fst-italic"><%= services[i].producer %></p>
                   </div>
                   <div class="d-inline-block medal" id="<%= services[i].rank %>"></div>
                 </div>
-                <button type="button" class="btn btn-dark w-100 py-2" onclick="location.href='<%= services[i].link %>'">링크</button>
-                <input type="button" value="투표" class="w-100 py-2" onclick="vote(<%= services[i].id %>)" />
+                <div class="my-2">
+                  <button type="button" class="btn btn-dark w-100 py-2 mb-1" onclick="window.open='<%= services[i].link %>'">링크</button>
+                  <input type="button" value="투표" class="w-100 py-2" onclick="vote(<%= services[i].id %>)" />
+                </div>
+                
               </div>
             </div>
           <% } %>
