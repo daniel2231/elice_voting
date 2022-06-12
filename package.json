@@ -1,14 +1,15 @@
 {
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
+    "express-session": "^1.17.3",
     "express-validator": "^6.14.0",
     "mongoose": "^6.3.3",
     "nanoid": "^3.3.4",
     "passport": "^0.5.3",
-    "express-session": "^1.17.3",
     "passport-github2": "^0.1.12"
   },
   "devDependencies": {

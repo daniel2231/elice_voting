@@ -1,0 +1,26 @@
+<html lang="en" class="h-100">
+  <head>
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="/css/loginStyle.css">
+  </head>
+  <body class="text-center ">
+    <main class="form-signin w-100 m-auto">
+        <img class="mb-4" src="/images/elice_logo.png" alt="" width="180" height="57">
+        <h1 class="h2 mb-4 fw-normal">Error 404</h1>
+
+        
+
+        <button class="mb-4 w-100 btn btn-lg btn-primary" onclick="location.href='/'" >뒤로 돌아가기</button>
+
+
+    </main>
+    <script>
+      function github() {
+        fetch('/login',{
+        method:"POST",
+        })
+      }
+      
+    </script>
+  </body>
+</html>

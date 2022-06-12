@@ -6,6 +6,7 @@ const path = require("path");
 const { MONGO_URI, PORT } = process.env;
 const session = require("express-session");
 const passport = require("passport");
+const cors = require("cors");
 
 mongoose
   .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -13,6 +14,7 @@ mongoose
   .catch((err) => console.log(err));
 
 const app = express();
+app.use(cors({ origin: '*' }));
 
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views/pages");
@@ -32,6 +34,8 @@ app.use(
   })
 );
 
+require("./controllers/authController");
+
 // 초기화. user정보가 req.user로 들어가게 됨
 app.use(passport.initialize());
 // passport 내에서 session을 사용해 로그인을 지속시킴
@@ -39,14 +43,11 @@ app.use(passport.session());
 
 // 라우터 설정
 const indexRouter = require("./router/indexRouter");
-const userRouter = require('./router/userRouter');
-const serviceRouter = require('./router/serviceRouter');
+const serviceRouter = require("./router/serviceRouter");
 
 // indexRouter에서 라우팅 설정
 app.use("/", indexRouter);
-app.use("/users", userRouter);
 app.use("/services", serviceRouter);
-
 
 // Port 설정
 app.listen(PORT, () => {
