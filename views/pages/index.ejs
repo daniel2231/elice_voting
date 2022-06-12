@@ -72,9 +72,9 @@
                     <p><%= services[i].name %></p>
                     <p><%= services[i].producer %></p>
                   </div>
-                  <button type="button" class="btn btn-dark w-100 py-2" onclick="location.href='<%= services[i].link %>'">링크</button>
+                  
                 </div>
-                
+                <button type="button" class="btn btn-dark w-100 py-2" onclick="location.href='<%= services[i].link %>'">링크</button>
                 <input type="button" value="투표" class="w-100 py-2" onclick="vote(<%= services[i].id %>)" />
               </div>
             </div>
