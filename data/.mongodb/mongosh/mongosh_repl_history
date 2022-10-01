@@ -1,0 +1,7 @@
+db.users.find()
+show collections
+use elice_voting
+for (let i = 1; i <= 6; i++) { db.services.insert({name: `test-${i}`, id: `${i}`, producer: `test`, link: `test`, votes: 0, rank: 0})}
+show collections
+use elice_voting
+show dbs
